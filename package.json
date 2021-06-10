@@ -1,0 +1,17 @@
+{
+  "name": "template-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "bherbruck <brennen.herbruck@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "clean": "lerna clean -y",
+    "dev": "lerna run dev --parallel --stream",
+    "build": "lerna run build --parallel",
+    "start": "lerna run start --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
